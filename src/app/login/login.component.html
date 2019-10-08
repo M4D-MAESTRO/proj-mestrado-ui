@@ -1,0 +1,21 @@
+<p-panel class="center p-grid p-justify-center p-align-center" header="Login">
+  <form>
+    <span class="ui-float-label espaco">
+      <input id="float-input" type="email" size="30" [(ngModel)]="creds.email" name="email" pInputText>
+      <label for="float-input">Email</label>
+    </span>
+
+    <span class="ui-float-label espaco">
+      <input id="float-input" type="password" size="30" [(ngModel)]="creds.password" name="password" pInputText>
+      <label for="float-input">Senha</label>
+    </span>
+
+    <span class="p-col p-offset-9">
+      <button pButton type="button" label="Login" (click)="login()"></button>
+    </span>
+
+  </form>
+  <p-footer>
+
+  </p-footer>
+</p-panel>

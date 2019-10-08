@@ -1,0 +1,24 @@
+<p-menubar [model]="items" (click)="changeMenu($event)"></p-menubar>
+
+
+<div [ngSwitch]="conditionExpression">
+    <div *ngSwitchCase="opcao == 1">
+        <app-cadastrar-aluno></app-cadastrar-aluno>
+    </div>
+
+    <div *ngSwitchCase="opcao == 2">
+        <app-cadastrar-projeto></app-cadastrar-projeto>
+    </div>
+
+    <div *ngSwitchCase="opcao == 3">
+        <app-listar-alunos></app-listar-alunos>
+    </div>
+
+    <div *ngSwitchCase="opcao == 4">
+        <app-perfil></app-perfil>
+    </div>
+
+    <div *ngSwitchDefault>
+        
+    </div>
+</div>
